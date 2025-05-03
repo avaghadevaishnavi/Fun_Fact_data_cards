@@ -1,42 +1,33 @@
-import { useEffect, useState } from 'react';
-import './App.css';
-import axios from 'axios';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Funfact from './component/Funfact';
+import Space from './component/Space';
+import Oceans from './component/Oceans';
+import Animals from './component/Animals';
 
 function App() {
-  const [facts, setfacts] = useState([]);
-
-  useEffect(() => {
-    axios.get('/api/facts')
-      .then((response) => {
-        setfacts(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-
   return (
-    <div className="container">
-      <h1 className="title">Fun Facts Data </h1>
-      <p className="count">Fun Facts Data Count {facts.length}</p>
+    <Router>
+      <div>
+        {/* Navbar */}
+        <nav className="navbar">
+          <Link to="/" className="hover:underline">Fun Facts</Link>
+          <Link to="/space" className="hover:underline">Space</Link>
+          <Link to="/oceans" className="hover:underline">Oceans</Link>
+          <Link to="/animals" className="hover:underline">Animals</Link>
+        </nav>
 
-      <div className="card-grid">
-        {facts.map((fact) => (
-          <div key={fact.id} className="card">
-            <img
-              src={fact.image || 'https://via.placeholder.com/300x150?text=No+Image'}
-              alt={fact.title}
-              className="card-image"
-            />
-            <div className="card-content">
-              <h3 className="card-title">{fact.title || 'Untitled'}</h3>
-              <p className="card-text">{fact.content || 'No content available.'}</p>
-              
-            </div>
-          </div>
-        ))}
+        {/* Route Views */}
+        <div className="p-4">
+          <Routes>
+            <Route path="/" element={<Funfact />} />
+            <Route path="/space" element={<Space />} />
+            <Route path="/oceans" element={<Oceans />} />
+            <Route path="/animals" element={<Animals />} />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

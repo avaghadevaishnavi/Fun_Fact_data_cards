@@ -1,22 +1,39 @@
-Fun Facts Cards App
-A responsive full-stack web app built with React (Vite) and Express.js that displays fun trivia in a clean card layout.
+Fun Facts Explorer is a responsive full-stack web application that allows users to discover interesting facts about the world around us — from space and oceans to animals and everyday wonders. This project demonstrates a clean separation of frontend and backend functionality using React for the user interface and Express.js for the backend API.
+ Technologies Used
+Frontend:
 
- Features
-Custom API (/api/jokes) with trivia stored in a local array
+React.js
 
-Frontend built in React + Vite
+React Router DOM (for navigation)
 
-Uses Vite’s built-in proxy to seamlessly connect frontend to backend
+HTML & CSS (including responsive design)
 
-Responsive and ready for easy deployment
+Custom card components for displaying data
 
+Backend:
+
+Node.js
+
+Express.js
+
+Custom RESTful APIs (no external database used for now)
+Here are the backend routes provided by the Express server:
+
+GET /api/facts – Returns general fun facts
+
+GET /api/spaces – Returns space-related facts
+
+GET /api/oceans – Returns facts about oceans
+
+GET /api/animals – Returns facts about animals
+
+ 
 
 Start the frontend:
 npm run dev
 
 Start the backend:
 npm start
-![Screenshot 2025-05-03 114929](https://github.com/user-attachments/assets/c63151ba-85a1-4f69-b71a-5567fe8974b3)
-![Screenshot 2025-05-03 114952](https://github.com/user-attachments/assets/b7e66446-4845-453a-81f0-76da47964bd4)
-
+![alt text](<Screenshot 2025-05-03 190843.png>)
+![alt text](<Screenshot 2025-05-03 190922.png>)
 
