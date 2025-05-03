@@ -34,6 +34,4 @@ npm run dev
 
 Start the backend:
 npm start
-![alt text](<Screenshot 2025-05-03 190843.png>)
-![alt text](<Screenshot 2025-05-03 190922.png>)
 
