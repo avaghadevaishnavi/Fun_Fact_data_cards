@@ -34,4 +34,8 @@ npm run dev
 
 Start the backend:
 npm start
+![Screenshot 2025-05-03 190843](https://github.com/user-attachments/assets/c14d665b-e284-4404-aff9-9ccacab0acf9)
+![Screenshot 2025-05-03 190922](https://github.com/user-attachments/assets/16c30d3a-6dbe-4512-b198-4e39aafe3c56)
+
+
 
