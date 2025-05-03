@@ -4,8 +4,8 @@ app.get('/',(req,res)=>{
     res.send("Server is ready");
 });
 
-app.get('/api/jokes',(req,res)=>{
-    const jokes =[
+app.get('/api/facts',(req,res)=>{
+    const facts =[
         {
             id: 1,
             title: "Octopus Has Three Hearts",
@@ -49,7 +49,7 @@ app.get('/api/jokes',(req,res)=>{
             content: "Because of thermal expansion, the iron expands in heat and can grow more than 6 inches taller."
           }
     ];
-    res.send(jokes);
+    res.send(facts);
 })
 
 const port=process.env.PORT || 3000;
