@@ -16,7 +16,7 @@ app.get('/api/jokes',(req,res)=>{
             id: 2,
             title: "Bananas Are Berries",
             image: "https://nutritionsource.hsph.harvard.edu/wp-content/uploads/2018/08/bananas-1354785_1920.jpg",
-            content: "Botanically, bananas are berries, but strawberries are not!"
+            content: "Botanically, bananas are berries, but strawberries are not! "
           },
           {
             id: 3,
@@ -46,7 +46,7 @@ app.get('/api/jokes',(req,res)=>{
             id: 7,
             title: "The Eiffel Tower Grows in Summer",
             image: "https://media.licdn.com/dms/image/v2/D4D12AQE1DRDroTl8YA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1699335043046?e=2147483647&v=beta&t=zmmA7BGC46lWJEUe6wvG2JcsobSvR9x8_jlEApl55Yk",
-            content: "Due to thermal expansion, the iron expands in heat and can grow more than 6 inches taller."
+            content: "Because of thermal expansion, the iron expands in heat and can grow more than 6 inches taller."
           }
     ];
     res.send(jokes);
